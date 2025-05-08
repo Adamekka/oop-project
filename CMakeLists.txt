@@ -4,7 +4,7 @@ project(oop-project)
 set(CMAKE_C_STANDARD 23)
 set(CMAKE_CXX_STANDARD 23)
 
-file(GLOB SOURCES src/*.cpp)
+file(GLOB_RECURSE SOURCES src/*.cpp)
 add_executable(oop-project ${SOURCES})
 
 set(CMAKE_CXX_FLAGS

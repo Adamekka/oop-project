@@ -1,11 +1,11 @@
 # Requirements
 
 - [ ] 7 classes
-- [ ] Dynamic array
-- [ ] Method overload
+- [x] Dynamic array
+- [x] Method overload
 - [ ] Class with static members
 - [ ] 3 Inheritances
-- [ ] Abstract class
-- [ ] Polymorphism
+- [x] Abstract class
+- [x] Polymorphism
 - [ ] Usage in main
 - [ ] Class docs
