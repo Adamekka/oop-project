@@ -6,7 +6,7 @@
 
 namespace ui {
 
-class Label : public ui::Element {
+class Label : public Element {
   private:
     std::string text;
 
