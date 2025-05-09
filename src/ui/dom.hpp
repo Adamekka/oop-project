@@ -7,6 +7,7 @@
 
 namespace ui {
 
+/// Dom class for managing a collection of UI elements
 class Dom {
   private:
     std::vector<std::shared_ptr<Element>> elements;

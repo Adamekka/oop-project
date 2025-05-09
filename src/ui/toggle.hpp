@@ -5,6 +5,7 @@
 
 namespace ui {
 
+/// Toggle class for creating a toggle button
 class Toggle : public Element {
   private:
     bool state = false;

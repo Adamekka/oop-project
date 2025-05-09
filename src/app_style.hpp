@@ -4,6 +4,7 @@
 #include <cstddef>
 #include <cstdint>
 
+/// Styling class for the application
 class AppStyle {
   private:
     static inline uint8_t font_size = 12;

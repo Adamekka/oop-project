@@ -8,4 +8,4 @@
 - [x] Abstract class
 - [x] Polymorphism
 - [x] Usage in main
-- [ ] Class docs
+- [x] Class docs

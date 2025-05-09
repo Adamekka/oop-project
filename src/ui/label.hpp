@@ -6,6 +6,7 @@
 
 namespace ui {
 
+/// Label class for creating a text label
 class Label : public Element {
   private:
     std::string text;

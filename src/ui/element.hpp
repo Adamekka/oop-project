@@ -5,6 +5,7 @@
 
 namespace ui {
 
+/// Base class for all UI elements
 class Element {
   protected:
     size_t id;

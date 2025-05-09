@@ -6,6 +6,7 @@
 
 namespace ui {
 
+/// Container class for grouping multiple UI elements
 class Container : public Element {
   protected:
     std::vector<std::shared_ptr<Element>> elements;

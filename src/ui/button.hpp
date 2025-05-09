@@ -6,6 +6,7 @@
 
 namespace ui {
 
+/// Button class for creating a clickable button
 class Button : public Element {
   private:
     Label label;
