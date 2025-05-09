@@ -2,22 +2,37 @@
 #include "ui/container.hpp"
 #include "ui/dom.hpp"
 #include "ui/label.hpp"
+#include "ui/toggle.hpp"
 #include <iostream>
 
 auto main() -> int32_t {
     ui::Dom dom;
 
-    auto container = std::make_shared<ui::Container>();
+    {
+        auto label = std::make_shared<ui::Label>("This is first container");
+        auto button = std::make_shared<ui::Button>("Click Me", []() {
+            std::cout << "Button clicked!\n";
+        });
 
-    auto label1 = std::make_shared<ui::Label>("Hello, World!");
-    auto button1 = std::make_shared<ui::Button>("Click Me", []() {
-        std::cout << "Button clicked!\n";
-    });
+        auto container = std::make_shared<ui::Container>();
+        container->add_element(label);
+        container->add_element(button);
 
-    container->add_element(label1);
-    container->add_element(button1);
+        dom.add_element(container);
+    }
 
-    dom.add_element(container);
+    {
+        auto label = std::make_shared<ui::Label>("This is second container");
+        auto toggle = std::make_shared<ui::Toggle>(false);
+
+        toggle->toggle();
+
+        auto container = std::make_shared<ui::Container>();
+        container->add_element(label);
+        container->add_element(toggle);
+
+        dom.add_element(container);
+    }
 
     dom.render();
 }

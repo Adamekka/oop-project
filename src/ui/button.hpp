@@ -1,7 +1,6 @@
 #ifndef UI_BUTTON_HPP
 #define UI_BUTTON_HPP
 
-#include "element.hpp"
 #include "label.hpp"
 #include <functional>
 
