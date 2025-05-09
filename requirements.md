@@ -1,6 +1,6 @@
 # Requirements
 
-- [x] 7 classes
+- [x] 7 Classes
 - [x] Dynamic array
 - [x] Method overload
 - [x] Class with static members
