@@ -1,3 +1,4 @@
+#include "app_style.hpp"
 #include "ui/button.hpp"
 #include "ui/container.hpp"
 #include "ui/dom.hpp"
@@ -6,6 +7,10 @@
 #include <iostream>
 
 auto main() -> int32_t {
+    AppStyle::set_font_size(15);
+    AppStyle::set_margin(5);
+    AppStyle::set_padding(2);
+
     ui::Dom dom;
 
     {
